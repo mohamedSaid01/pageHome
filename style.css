@@ -1,0 +1,615 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,100;1,9..40,200;1,9..40,300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0; 
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 4rem;
+}
+
+header  .logo{
+    width: 15rem;
+    height: 8rem;
+    margin-left: 5rem;
+}
+
+header .logo:hover ,.section1  .btn-sec1:hover, footer .container .info ul li:first-child:hover , .section5  .flech-vers-haut:hover, .section3 form input:hover , .section4 form input:hover , header .div1 img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: transform 0.1s ease-in-out 0.1s;
+}
+
+header .div1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    margin-bottom: 3rem;
+}
+
+header .div1 ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 1.7rem;
+    color: #19b904;
+    font-family: "Dm Sans", sans-serif;
+    font-size: 1rem;
+}
+
+header .div1 ul li:first-child:hover , header .div1 ul li:last-child:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color: #19b904;
+    transform: scale(1.1);
+    transition: transform 0.1s ease-in-out 0.1s;
+}
+
+header .div1 ul li:nth-child(2){
+    font-weight: normal;
+}
+
+header .div1 .img-p{
+    display: flex;
+    gap: 1rem;
+}
+
+header .div1 img , .section3 .section3-container .section3-card .icon-cherch , .section5 .section5-container .section5-card .section5-img-h2 .icon-cherch{
+    width: 3rem;
+    height: 2rem;
+}
+
+
+header .div1 .img-p .header-p{
+    display: flex;
+    flex-direction: column;
+    color: #4ad121;
+    font-family: "Dm Sans", sans-serif;
+    font-size: small;
+    font-weight: bolder;
+}
+
+header .div1 .img-p .header-p .header-p-1{
+    font-weight: bolder;
+    font-size: large;
+}
+
+header .div1 .header-p .header-p-2{
+    margin-left: auto;
+}
+
+.section1{
+    background-image: url('assets/img2.jpg');
+    background-size: 100% auto; ;
+    background-position: center;
+    width: 100%;
+    height: 15rem;
+}
+
+.section1 img{
+    width: 100%;
+    height: 7rem;
+
+}
+
+.section1 form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1.1rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    width: 52rem;
+    height: 5.5rem;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 8rem;
+}
+
+.section1 .txt{
+    width: 17rem;
+    height: 3rem;
+    padding-left: 1rem;
+    background-color: white;
+    border: none;
+}
+
+.section1 .txt::placeholder{
+    font-style: italic;
+}
+
+.section1 .txt:focus {
+    outline: none; 
+}
+
+
+.section1  .btn-sec1{
+    width: 10rem;
+    height: 3rem;
+    background-color: rgb(148, 3, 148);
+    color: white;
+    border: none;
+}
+
+
+.section2{
+    background-image: url('assets/img3.jpg');
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 30rem;
+    transform: scale(0.9);
+}
+
+.section2 h1{
+    color: white;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin-top: 5rem;
+    margin-left: 7rem;
+}
+
+.section2 .section2-img{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 4rem;
+    margin-top: 6%;
+}
+
+.section2 .section2-img img:hover{
+    cursor: pointer;
+    transform: scale(1.5);
+    transition: transform 0.2s ease-in-out 0.2s; 
+}
+
+
+
+.section3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+
+
+.section3 .section3-container .section3-card .icon-cherch{
+    display: none; 
+ }
+
+
+.section3 h1 , .section4 h1 , .section5 h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #a5a5a5;
+    font-weight: bold;
+}
+
+.section3 .section3-container{
+    display: flex;
+    background-color: white;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.section3 .section3-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+    width: 20rem;
+    height: 25rem;
+    border: none;
+}
+
+.section3 .section3-card:hover{
+    border: 1px solid rgb(148, 3, 148);   
+}
+
+.section3 .section3-card .h2{
+    display: none;  
+}
+
+.section3 .section3-card:hover .h2{
+    display: block;  
+}
+
+.section3 .section3-card p , .section5 .section5-card p{ 
+    text-align: center;
+ }
+
+.section3 .section3-card:hover p {
+    display: none;  
+}
+
+.section3 .section3-card p span, .section5 .section5-card span{
+    color: #a5a5a5;    
+ }
+
+
+.section3 .section3-card img , .section5 .section5-card img{
+    width: 12rem;
+    height: 10rem;
+}
+
+.section3 .section3-card hr , .section5 .section5-card hr{
+   width: 80%; 
+}
+
+ .section3 .section3-card h2 , .section5 .section5-card  h2{
+    color: rgb(148, 3, 148);    
+ }
+
+ .section3 .section3-card:hover h2{
+    display: none;    
+ }
+
+ .section3 .section3-card h2 span , .section5 .section5-card h2 span{
+    font-size: small;    
+ }
+
+ .section3 .section3-card form .btn-sec3{
+    display: none;
+    width: 12rem;
+    height: 2.5rem;
+    background-color: #19b904;    
+ }
+
+ .section3 .section3-card:hover form .btn-sec3{
+    display: block;    
+ }
+
+ .section3 form input , .section4 form input{
+    width: 18rem;
+    height: 3.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: rgb(148, 3, 148);
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+ }
+
+
+
+ .section4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.section4 .section4-container{
+    display: flex;
+    gap: 1rem;
+    
+}
+
+.section4 .section4-container .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.1rem;
+    width: 16rem;
+    height: 18rem;
+    border: none;
+    background-color: white;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.section4 .section4-container .card img{
+    width: 15rem;
+    height: 15rem;
+}
+
+.section4 .section4-container .card input{
+    width: 100%;
+    height: 2.5rem;
+    background-color: #19b904; 
+    color: white;
+    border: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: large;
+}
+
+.section4 .section4-container .card input:hover{
+    cursor: pointer;
+}
+
+
+.section5{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.section5 .section5-container{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.section5 .section5-container .section5-container1{
+    display: flex;
+    background-color: white;
+    box-shadow: 8px 8px 40px rgba(0, 0, 0, 0.1);   
+}
+
+.section5 .section5-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:1.5rem;
+    width: 20rem;
+    height: 25rem;
+    border: none;
+}
+
+.section5  .flech-vers-haut{
+    width: 3rem;
+    height: 2rem;
+    margin-left: 90%;
+    margin-top: 1rem;
+}
+
+.section5 .section5-container .section5-card .section5-img-h2 .icon-cherch{
+    display: none;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(238, 237, 237);
+    gap: 2rem;
+    height: 25rem;
+}
+
+footer img{
+    width: 15rem;
+    height: 8rem;
+}
+
+
+footer .container{
+    display: flex;
+    gap: 10rem;
+}
+
+footer .container .info ul li{
+    list-style-type: none;
+    text-decoration: none;
+    margin-bottom: 1.5rem;
+}
+
+footer .container .info ul a{
+    text-decoration: none;
+    color: inherit;
+}
+
+footer .container .info ul li:first-child {
+    color: #19b904;
+}
+
+footer .container .info ul li:nth-child(2):hover, li:nth-child(3):hover, li:nth-child(4):hover {
+    color: rgb(4, 147, 223);
+}
+
+footer  h6{
+    color: rgb(164, 43, 164);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: -20px; 
+}
+
+footer  h6:hover{
+    cursor: pointer;
+    text-decoration: underline 
+}
+
+
+
+footer  h6:hover{
+    cursor: pointer;
+    text-decoration: underline 
+}
+
+
+@media (max-width: 426px){
+
+    header{
+       gap: 1.5rem;
+       margin: 1rem 0.1rem;
+    }
+
+    header .logo{
+        width: 8rem;
+        height: 3rem;
+        margin-left: 2rem;
+    }
+
+    header .div1{
+        gap: 0.5rem;
+    }
+
+    header .div1 ul{
+        gap: 0.4rem;
+        font-size: 0.7rem;
+    }
+
+    header .div1 .img-p{
+        gap: 0.5rem;
+    }
+    
+    header .div1  img{
+        width: 1.5rem;
+        height: 1rem;
+    }
+
+  
+
+    header .div1 .img-p .header-p .header-p-1{
+        font-weight: bold;
+        font-size: small;
+    }
+
+    header .div1 .img-p .header-p .header-p-2{
+        font-weight:bold;
+        font-size:x-small;
+    }
+
+    .section1{
+        width: 100%;
+        height: 15rem;
+    }
+
+    .section1 form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        width: 0;
+        height: 0;   
+    }
+
+    .section1 .txt{
+        width: 20rem;
+        height: 3rem;
+    }
+
+    .section1 .txt::placeholder{
+        text-align: center;
+    }
+
+    .section1  .btn-sec1{
+        width: 21rem;
+    }
+
+    .section2{
+        width: 100%;
+        height: 20rem;
+        transform: scale(1);
+    }
+
+    .section2 h1{
+        font-size: medium;
+        margin-top: 0;
+        margin-left: 0;
+        margin: 3rem 2rem;
+    }
+
+
+
+    .section3 .section3-card, .section5 .section5-card{
+        width: 11rem;
+        height: 22rem;
+        border: none;
+    }
+
+    .section3 .section3-container .section3-card img , .section5 .section5-container .section5-card img {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .section3 .section3-container .section3-card .section3-img-h2, .section5 .section5-container .section5-card .section5-img-h2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+     }
+
+    .section3 .section3-container .section3-card .section3-img-h2 .icon-cherch, .section5 .section5-container .section5-card .section5-img-h2 .icon-cherch{
+        display: block; 
+     }
+
+     .section3 .section3-container .section3-card2,  .section4 .section4-container .card-hidden, .section5 .section5-container .div-block, .section5  .flech-vers-haut{
+        display: none;
+     }
+
+     .section3 .section3-card h2, .section5 .section5-card h2{
+        font-size: 1rem;   
+     }
+
+     .section3 form input , .section4 form input {
+        width: 15rem;
+        font-size: 0.7rem;
+     }
+
+
+    .section4 .section4-container {
+        gap: 0.2rem;
+    }
+
+    .section4 .section4-container .card{
+        width: 7rem;
+    }
+
+    .section4 .section4-container .card img{
+        width: 7rem;
+        height: 7rem;
+    }
+
+    .section4 .section4-container .card input{
+        font-size: 0.7rem;
+        height: 2rem; 
+    }
+
+    .section4 .section4-container .card{
+        gap: 1rem;
+        height: 10rem;
+    }
+
+    footer img{
+        width: 12rem;
+        height: 7rem;
+    }
+
+    footer .container{
+        gap: 1.6rem;
+    }
+
+    footer .container .info ul li{
+        font-size: small;
+    }
+
+    footer h6{
+        font-size: x-small;
+    }
+
+}
+
+
+ 
+ 
+
+
+
+
+
+
+
+
+
